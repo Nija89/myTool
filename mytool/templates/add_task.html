@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h1 class="text-center my-3">Add A Task</h1>
+            
+            <form action="{% url 'mytool:add_task' %}" method="post">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label>Name: </label>
+                    <input class="form-control" type="text" name="nameFirst" maxlength="50" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description">Description: </label>
+                    <textarea class="form-control" name="description" required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <input class="btn btn-success" type="submit" >
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

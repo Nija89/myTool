@@ -1,0 +1,11 @@
+<h1>Hello World</h1>
+
+<h2>Add Details <a href="{% url 'mytool:add_task' %}">here !!!</a></h2>
+
+
+<h2>List:</h2>
+<ul class="list-group">
+    {% for individualName in apple %}
+        <li>{{ individualName.name }} -> {{individualName.description}}</li>
+    {% endfor %}
+</ul>
