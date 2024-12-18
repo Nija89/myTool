@@ -1,3 +1,5 @@
 gunicorn
 Django
 djongo
+pytz
+djongo pytz
