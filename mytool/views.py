@@ -4,7 +4,8 @@ from .models import firstDB
 
 # Create your views here.
 def firsFunction(request):
-    myList = firstDB.objects.all()
+    myList = firstDB.objects.all()[:2]
+
     context = {
         'apple' : myList
     }
